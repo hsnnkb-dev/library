@@ -1,0 +1,180 @@
+html *{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#btn-div{
+    width: 85%;
+    height: 150px;
+    background-color: rgb(45, 129, 5);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addbook{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border: 3px solid black;
+    transition: all 0.5s;
+}
+#container{
+    width: 85%;
+    height: auto;
+    min-height: 70vh;
+    background-color: yellow;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.grid{
+    width: 300px;
+    min-height: 400px;
+    max-height: min-content;
+    background-color: white;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+.grid > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid > p:nth-child(1){
+    font-size: 50px;
+    color: rgb(5, 5, 59);
+    min-height: 160px;
+    overflow: auto;
+}
+.grid > p:nth-child(2){
+    color: rgb(5, 5, 59);
+    min-height: 80px;
+    overflow: auto;
+}
+.grid > p:nth-child(3){
+    font-size: 20px;
+    color: rgb(60, 60, 61);
+    margin-bottom: 10px;
+    overflow: auto;
+}
+.grid > div >button{
+    width: 70%;
+    margin: 0 auto;
+    height: 30px;
+    font-size: 20px;
+    transition: all 0.5s;
+    border: 2px solid black;
+}
+
+#banner{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+#pop{
+    z-index: 10;
+    width: 50%;
+    height: 100%;
+    background-color: gainsboro;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#pop > input[required]{
+    width: 75%;
+    height: 40px;
+    margin: 30px auto;
+    font-size: 25px;
+    padding-left: 5%;
+    border: 3px solid black;
+}
+#pop > span{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.main-label{
+    text-align: center;
+    font-size: 25px;
+    margin: 50px auto 20px auto;
+}
+#save{
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 0 auto;
+    align-items: center;
+}
+#read{
+    font-size: 30px;
+    width: 250px;
+    transition: all 0.5s;
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.readcheck{
+    color: white;
+}
+#save *{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+#save > button >i{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    font-size: 50px;
+    
+}
+#save-btn{
+    color: green;
+}
+#cancel-btn{
+    color: red;
+}
+button:focus{
+    outline: none;
+}
+i:hover{
+    transform: scale(1.2);
+}
+#read:hover{
+    background-color: black;
+    color: white;
+    cursor: default;
+}
+.del:hover{
+    background-color: red;
+    color: white;
+}
+#addbook:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+.display{
+    display: none;
+}

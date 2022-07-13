@@ -2,13 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibraryData</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="index.js"></script>
-    <title>Library</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+    <div id="btn-div">
+        <button id="addbook">Add Book</button>
+    </div>
+    <div id="banner" class="display">
+        <form id="pop" class="">
+            <input id="title" type="text" placeholder="Title" required autocomplete="off" maxlength="50">
+            <input id="author" type="text" placeholder="Author" required autocomplete="off" maxlength="30">
+            <input id="pages" type="number" placeholder="pages" required autocomplete="off" max="100000">
+            <label for="" class="main-label">Read it?</label>
+            <span>
+                <div  id="read">READ</div>
+            </span>
+            <div id="save">
+                <button type="submit" id="save-btn"><i class="fas fa-check"></i></button>
+                <button type="reset" id="cancel-btn"><i class="fas fa-times"></i></button>
+            </div>
+        </form>
+    </div>
+    <div id="container">
+        <div class="grid display" id="proto">
+            <p>title</p>
+            <p>author</p>
+            <p>pages</p>
+            <div>
+                <button class="readcheck"></button>
+                <button class="del">Delete</button>
+            </div>
+        </div>
+    </div>
     
+    <script src="index.js"></script>
 </body>
 </html>
